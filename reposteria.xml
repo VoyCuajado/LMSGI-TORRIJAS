@@ -172,6 +172,7 @@
   </torrijas>
   
   <!-- ========== RECETAS DE CHURROS ========== -->
+
   <churros>
     <receta>
       <nombre>Churros caseros</nombre>
@@ -372,6 +373,7 @@
   </churros>
   
   <!-- ========== RECETAS DE CROISSANTS ========== -->
+  
   <croissant>
     <receta>
       <nombre>Croissants francés de mantequilla</nombre>
