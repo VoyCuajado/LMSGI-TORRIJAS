@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="museos2_01.xsl"?>
+<?xml-stylesheet type="text/xsl" href="SIN_IMPLEMENTAR.xsl"?>
 
 <!-- [ORGANIZACIÓN DE LAS RECETAS]
   Las recetas van diferenciadas según su tipo de comida. Todas las recetas tienen que pertenecer a su grupo correspondiente.
@@ -19,7 +19,7 @@
     5.1. Paso + atributo { p (número del paso indicado en orden ascendente) }
 -->
 
-<!-- [IMPLEMENTACIÓN DE LAS VALOCAIONES]
+<!-- [IMPLEMENTACIÓN DE LAS VALORACIONES]
   Rango de las valoraciones. Según su valoración (valor), las plantillas mostrarán el núm/10 y un texto complementario.
 
   1   =   Incomible
