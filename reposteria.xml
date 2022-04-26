@@ -1,0 +1,470 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="museos2_01.xsl"?>
+
+<!-- [ORGANIZACIÓN DE LAS RECETAS]
+  Las recetas van diferenciadas según su tipo de comida. Todas las recetas tienen que pertenecer a su grupo correspondiente.
+
+  Ej.: Torrijas -> Recetas de torrijas
+-->
+
+<!-- [CONTENIDOS DE LAS RECETAS]
+  Todas las recetas deben incluir los suiguientes apartados:
+
+  1. Nombre
+  2. Descripción
+  3. Valoración + atributo { valor (número del 1 al 10) }
+  4. Lista de ingredientes:
+    4.1. Ingrediente (cada ingrediente se diferencia de forma individual)
+  5. Elaboración:
+    5.1. Paso + atributo { p (número del paso indicado en orden ascendente) }
+-->
+
+<!-- [IMPLEMENTACIÓN DE LAS VALOCAIONES]
+  Rango de las valoraciones. Según su valoración (valor), las plantillas mostrarán el núm/10 y un texto complementario.
+
+  1   =   Incomible
+  2   =   Asqueroso
+  3   =   Bastante malo
+  4   =   Poco apetecible
+  5   =   Mediocre
+  6   =   Bueno
+  7   =   Muy apetitoso
+  8   =   Delicioso
+  9   =   Exquisito
+  10  =   Manjar de dioses
+-->
+
+<!-- ========== RECETAS DE TORRIJAS ========== -->
+
+<reposteria>
+  <torrijas>
+    <receta>
+      <nombre>Torrijas de vino tinto</nombre>
+      <descripcion>Receta tradicional española de torrijas glaseadas con vino tinto caramelizado. Para aquellos con un paladar refinado.</descripcion>
+      <valoracion valor="9" />
+      <lista_ingredientes>
+        <ingrediente>Rebanadas de pan de torrijas</ingrediente>
+        <ingrediente>1 litro de vino tinto (vino a tú elección)</ingrediente>
+        <ingrediente>300g de azúcar</ingrediente>
+        <ingrediente>Piel de naranja</ingrediente>
+        <ingrediente>Piel de limón</ingrediente>
+        <ingrediente>Ramas de canela</ingrediente>
+        <ingrediente>Anís estrellado</ingrediente>
+        <ingrediente>Harina</ingrediente>
+        <ingrediente>2 o 3 huevos</ingrediente>
+        <ingrediente>Aceite para freír</ingrediente>
+        <ingrediente>Yogur griego sin azúcar</ingrediente>
+        <ingrediente>Frambuesas frescas</ingrediente>
+        <ingrediente>Hojas de hierbabuena</ingrediente>
+      </lista_ingredientes>
+      <elaboracion>
+        <paso p="1">Ponemos el vino en un cazo con el azúcar, las pieles de naranja y limón, la canela y el anís estrellado y lo llevamos a ebullición, bajamos el fuego un pocoy dejamos que hierva durante unos minutos (entre 5 y 8). a fin de que se mezclen bien los sabores. Colamos y reservamos caliente.<paso>
+        <paso p="2">Disponemos el pan cortado sobre una fuente y mojamos con el vino caliente (es importante que esté caliente ya que de este modo resulta mucho más fácil empapar el pan).</paso>
+        <paso p="3">Preparamos una sartén con el aceite a fin de que se vaya calentando (no debe humear pero debe estar caliente).</paso>
+        <paso p="4">Pasamos las torrijas ligeramente por harina para que selle el interior mojado con vino y lo pasamos por huevo batido.</paso>
+        <paso p="5">Freímos las torrijas a fuego medio-alto, un vuelta y vuelta para que se forme costra de cada lado. Las damos vuelta con una espátula y mucho mimo y cariño, no queremos que se nos rompan y recuerda que están muy tiernas porque las hemos emborrachado mucho.</paso>
+        <paso p="6">Pasamos las torrijas recién fritas por papel absorbente para eliminar el exceso de aceite.</paso>
+        <paso p="7">Nos ha sobrado vino, así que lo volvemos a poner al fuego y dejamos que reduzca, si fuese necesario, añadimos un par de cucharadas más de azúcar.</paso>
+        <paso p="8">Cuando haya reducido lo suficiente y se haya formado un almíbar espeso, nos ayudaremos de un pincel de cocina para pintar las torrijas con esta mezcla que le proporcionará un color y un brillo precioso.</paso>
+        <paso p="9">Servimos con un poquito de yogur griego sin azúcar y alguna fruta fresca como pueden ser las frambuesas. Decoramos con una hojita de hierbabuena.</paso>
+      </elaboracion>
+    </receta>
+    
+    <receta>
+      <nombre>Torrijas borrachas</nombre>
+      <valoracion valor="10" />
+      <descripcion>Deliciosa receta tradicional española de torrijas bañadas en almíbar de vino dulce y canela.</descripcion>
+      <lista_ingredientes>
+        <ingrediente>Rebanadas de pan de torrijas</ingrediente>
+        <ingrediente>800ml de agua</ingrediente>
+        <ingrediente>1/2 litro de vino moscatel o cualquier vino dulce</ingrediente>
+        <ingrediente>Huevos batidos</ingrediente>
+        <ingrediente>Ramas de canela</ingrediente>
+        <ingrediente>Aceite para freír</ingrediente>
+        <ingrediente>100g de azúcar</ingrediente>
+      </lista_ingredientes>
+      <elaboracion>
+        <paso p="1">Ponemos el agua al fuego con el palo de canela, el vino y el azúcar. Llevamos a ebullición.</paso>
+        <paso p="2">Tenemos que reducir y espesar este almíbar de vino con una ebullición de al menos 15 minutos que ayudará a que evapore el alcohol y pierda el sabor a vino crudo. El azúcar tiene que quedar bien disuelto, así que hay que remover de cuando en cuando.</paso>
+        <paso p="3">Apartamos del fuego al momento y dejamos templar.</paso>
+        <paso p="4">Remojamos el pan en este almíbar de vino para que queden bien empapadas. Dejamos escurrir un poco el exceso de líquido y las pasamos por huevo batido.</paso>
+        <paso p="5">Freímos en aceite caliente hasta que doren por los dos lados y las vamos colocando en un plato sobre papel de cocina para que suelten el exceso de aceite.</paso>
+        <paso p="6">Dejamos enfriar las torrijas regadas con el almíbar de vino que nos ha sobrado (hay que colarlo) hasta el momento de servir.</paso>
+      </elaboracion>
+    </receta>
+    
+    <receta>
+      <nombre>Torrijas de miel</nombre>
+      <valoracion valor="10" />
+      <descripcion>Receta clásica española por excelencia de torrijas bañadas en miel. Líder en Semana Santa.</descripcion>
+      <lista_ingredientes>
+        <ingrediente>Rebanadas de pan de torrijas</ingrediente>
+        <ingrediente>4 huevos</ingrediente>
+        <ingrediente>2 litros de leche</ingrediente>
+        <ingrediente>Piel de naranja</ingrediente>
+        <ingrediente>Ramas de canela</ingrediente>
+        <ingrediente>Miel</ingrediente>
+        <ingrediente>100g de azúcar</ingrediente>
+        <ingrediente>Aceite de oliva</ingrediente>
+      </lista_ingredientes>
+      <elaboracion>
+        <paso p="1">Cocemos la leche junto con una rama de canela y la cáscara de naranja. Cuando haya hervido se retira hasta que quede templada y entonces añadimos el azúcar removiendo para que se disuelva.</paso>
+        <paso p="2">Cortamos el pan en rebanadas como de dos centímetros de espesor, las colocamos en una fuente para remojar junto con la leche de la que hemos retirado la canela y la cáscara de naranja; se dejan empapar bien pero procurando que no se deshagan.</paso>
+        <paso p="3">Pasamos las rebanadas escurridas de la leche por los huevos batidos y las freímos en una sartén con abundante aceite.</paso>
+        <paso p="4">Se van retirando las rebanadas ya fritas sobre una fuente cubierta con papel de cocina para que absorba el aceite sobrante.</paso>
+        <paso p="5">Se colocan las torrijas ya hechas en una fuente y se rocían con miel rebajada con agua.</paso>
+      </elaboracion>
+    </receta>
+    
+    <receta>
+      <nombre>Torrijas sin azucar</nombre>
+      <valoracion valor="7" />
+      <descripcion>Versión de la receta tradicional española de torrijas sin azúcar. Ligeras y deliciosas.</descripcion>
+      <lista_ingredientes>
+        <ingrediente>1 pieza de pan de barra asentado o pan especial de torrijas</ingrediente>
+        <ingrediente>2 huevos</ingrediente>
+        <ingrediente>Edulcorante líquido</ingrediente>
+        <ingrediente>1 litro de leche (puede ser desnatada)</ingrediente>
+        <ingrediente>1 rama de canela o 1 cucharada de esencia de vainilla</ingrediente>
+        <ingrediente>Piel de limón</ingrediente>
+        <ingrediente>Miel (opcional)</ingrediente>
+        <ingrediente>Aceite de oliva suave</ingrediente>
+      </lista_ingredientes>
+      <elaboracion>
+        <paso p="1">Ponemos al fuego la leche con la canela y la piel del limón. Añadimos dos cucharadas de edulcorante. La cantidad es según el poder endulzante del edulcorante, mira lo que indique el envase para que equivalga a 4 cucharadas de azúcar normal.</paso>
+        <paso p="2">Cuando la leche va a romper a hervir apartamos del fuego y dejamos infusionar mientras se va templando y enfriando. Tiene que estar fría o casi fría para seguir con la receta.</paso>
+        <paso p="3">Remojamos el pan en la leche hasta que se empape bien por todos lados, si es necesario déjalo dentro de la leche un par de minutos.</paso>
+        <paso p="4">Escurrimos las torrijas de la leche, las pasamos por huevo batido y las metemos a freír en aceite caliente.</paso>
+        <paso p="5">Freímos hasta que doren quitando a menudo la espuma que va saliendo al freír las torrijas. Para ahorrar calorías podemos simplemente tostarlas en un poco de aceite en una sartén, como si las estuvieras haciendo "a la plancha".</paso>
+        <paso p="6">Dejamos que escurran sobre papel de cocina y las dejamos enfriar. Espolvoreamos con canela molida para servir.</paso>
+      </elaboracion>
+    </receta>
+    
+    <receta>
+      <nombre>Torrijas de brioche</nombre>
+      <valoracion valor="8" />
+      <descripcion>Receta de torrijas gourmet. El nuevo favorito de los comensales.</descripcion>
+      <lista_ingredientes>
+        <ingrediente>400g Brioche rectangular</ingrediente>
+        <ingrediente>500ml de leche</ingrediente>
+        <ingrediente>500ml de nata líquida</ingrediente>
+        <ingrediente>125g de azúcar</ingrediente>
+        <ingrediente>Ramas de canela o vainilla</ingrediente>
+        <ingrediente>Piel de naranja</ingrediente>
+        <ingrediente>Piel de limón</ingrediente>
+        <ingrediente>2 huevos</ingrediente>
+        <ingrediente>Mantequilla</ingrediente>
+        <ingrediente>Miel</ingrediente>
+        <ingrediente>Canela en polvo</ingrediente>
+      </lista_ingredientes>
+      <elaboracion>
+        <paso p="1">Ponemos en un cazo al fuego y llevamos a ebullición, la nata, la leche, el azúcar, la ramita de canela o vainilla, la monda de naranja y limón.</paso>
+        <paso p="2">Dejamos unos minutos y retiramos. Lo dejamos enfriar.</paso>
+        <paso p="3">En un recipiente amplio, colocamos las rebanadas de brioche, de unos 2 cm, más o menos.</paso>
+        <paso p="4">Bañamos cubrimos las rebanadas con la leche y nata infusionada y fría, a temperatura ambiente.</paso>
+        <paso p="5">Dejamos que se empapen bien, por ambos lados una hora o dos. (si no se han quedado totalmente cubiertas les daremos la vuelta una vez transcurrido la mitad del tiempo).</paso>
+        <paso p="6">Las escurrimos un poquito y las pasamos por un baño de huevo batido.</paso>
+        <paso p="7">Las damos un punto doradito en una sartén con mantequilla y sacamos a una bandeja con papel de cocina para quitar el exceso de mantequilla.</paso>
+        <paso p="8">Las pasamos a una fuente o bandeja y las rociamos con un chorrito de miel y espolvoreamos canela al gusto.</paso>
+        <paso p="9">Podemos servir en bandeja o emplatar individualmente.</paso>
+      </elaboracion>
+    </receta>
+  </torrijas>
+  
+  <!-- ========== RECETAS DE CHURROS ========== -->
+  <churros>
+    <receta>
+      <nombre>Churros caseros</nombre>
+      <valoracion valor="7" />
+      <descripcion></descripcion>
+      <lista_ingredientes>
+        <ingrediente>250ml de agua</ingrediente>
+        <ingrediente>1 pizca de sal</ingrediente>
+        <ingrediente>Aceite de girasol</ingrediente>
+        <ingrediente>120g de harina</ingrediente>
+        <ingrediente>20g de mantequilla</ingrediente>
+        <ingrediente>200g de azucar</ingrediente>
+      </lista_ingredientes>
+      <elaboracion>
+        <paso p="1">Para preparar la masa de los churros, pon a calentar el agua en una cazuela al fuego. Añade la mantequilla y una pizca de sal y espera a que se funda.</paso>
+        <paso p="2">Cuando rompa a hervir, agrega la harina sin dejar de remover con una cuchara de madera hasta que absorba todo el agua y la masa no se pegue en la cazuela. Si ves que la masa queda muy dura, puedes añadirle un poco más de agua.</paso>
+        <paso p="3">Pon la masa de los churros en un bol y tápala con papel film transparente. Déjala reposar a temperatura ambiente hasta que se temple.</paso>
+        <paso p="4">Freír los churros. Introduce la masa de churros en una manga pastelera con boquilla de estrella y presiónala para que no queden burbujas de aire. La masa debe quedar compacta dentro de la manga.</paso>
+        <paso p="5">Una vez tienes la masa lista, pon una cazuela al fuego con abundante aceite. Cuando el aceite esté muy caliente, añade los churros presionando la manga y cortando la masa con una tijera directamente sobre la cazuela. Fríelos poco a poco, ya que si echas muchos a la vez se enfriará el aceite y no quedarán perfectos. Dales la vuelta para que se hagan por igual por todos los lados y deja que se frían hasta que queden dorados.</paso>
+        <paso p="6">Después, pasa los churros a una fuente con papel absorbente para retirar el exceso de grasa.</paso>
+        <paso p="7">Espolvorea los churros con un poco de azúcar y sírvelos recién hechos para que se mantengan crujientes.</paso>
+      </elaboracion>
+    </receta>
+    
+    <receta>
+      <nombre>Churros rellenos</nombre>
+      <valoracion valor="8" />
+      <descripcion></descripcion>
+      <lista_ingredientes>
+        <ingrediente>300ml de agua</ingrediente>
+        <ingrediente>1/2 cucharilla de sal</ingrediente>
+        <ingrediente>250g de harina</ingrediente>
+        <ingrediente>Aceite para freír</ingrediente>
+        <ingrediente>50ml de leche</ingrediente>
+        <ingrediente>125g de chocolate negro</ingrediente>
+        <ingrediente>50g de azúcar</ingrediente>
+        <ingrediente>25g de cacao en polvo</ingrediente>
+        <ingrediente>1/2 cucharilla de pasta de vainilla</ingrediente>
+        <ingrediente>25g de maicena</ingrediente>
+      </lista_ingredientes>
+      <elaboracion>
+        <paso p="1">Para comenzar con la receta de los churros rellenos de chocolate pon en un cazo al fuego el agua con la sal hasta que comience a hervir.</paso>
+        <paso p="2">A continuación agrega la harina en forma de volcán en un bol de algún material resistente al calor y vierte el agua hirviendo sobre la misma. Después mezcla la masa con una cuchara de madera.</paso>
+        <paso p="3">Continúa preparando una bandeja de horno con papel vegetal. Cuando la masa esté templada introdúcela en una manga pastelera con una boquilla.</paso>
+        <paso p="4">Ahora ve haciendo los churros de entre 9 y 10 centímetros sobre la misma y depositarlos sobre la fuente de horno.</paso>
+        <paso p="5">Una vez que tengas todos los churros sobre la bandeja del horno reserva en la nevera durante al menos 30 minutos para que la masa adquiera consistencia.</paso>
+        <paso p="6">Para continuar con la receta de churros rellenos de chocolate, prepara el chocolate mientras se enfría la masa.</paso>
+        <paso p="7">Antes de comenzar con la elaboración del chocolate, reserva medio vaso de leche. Después pon el resto de la leche en un cazo con el azúcar hasta que rompa a hervir. En ese momento agrega el chocolate troceado y el cacao en polvo.</paso>
+        <paso p="8">Cuando se funda el chocolate, diluye la maicena en la leche que reservaste al principio. Cuando esté bien disuelta agrégala con el chocolate y el resto de ingredientes. Remueve la mezcla constantemente con unas varillas para que no se formen grumos.</paso>
+        <paso p="9">Finamente agrega la pasta de vainilla y continúa removiendo durante unos minutos más hasta que el chocolate espese y tenga la consistencia deseada. A continuación reserva el chocolate.</paso>
+        <paso p="10">Vamos a freír los churros. Para ello calienta el aceite en una sartén y fríe los churros hasta que estén ligeramente dorados. No deben quedar demasiado tostados. De lo contrario es más difícil rellenarlos.</paso>
+        <paso p="11">Continúa con la receta de los churros rellenos de chocolate sacando los churros sobre papel de cocina para que escurran es exceso de aceite.</paso>
+        <paso p="12">Después rellenamos los churros. Para ello, vamos a poner el chocolate en una manga de repostería con una boquilla fina.</paso>
+        <paso p="13">Para rellenar los churros cortamos la punta de los churros e introducimos una brocheta de madera para hacer un agujero por donde pueda circular el chocolate.</paso>
+        <paso p="14">Después, rellenamos los churros y listos para comer. Si te ha gustado recuerda compartir en tus redes esta receta de churros.</paso>
+      </elaboracion>
+    </receta>
+
+    <receta>
+      <nombre>Churros con chocolate y matcha</nombre>
+      <valoracion valor="10" />
+      <descripcion></descripcion>
+      <lista_ingredientes>
+        <ingrediente>250g de harina</ingrediente>
+        <ingrediente>200ml de agua</ingrediente>
+        <ingrediente>50g de mantequilla</ingrediente>
+        <ingrediente>1 pizca de sal</ingrediente>
+        <ingrediente>1/2 taza de chocolate blanco derretido</ingrediente>
+        <ingrediente>1/2 cucharada de té verde matcha</ingrediente>
+        <ingrediente>1/3 taza de azúcar</ingrediente>
+        <ingrediente>Aceite para freír</ingrediente>
+      </lista_ingredientes>
+      <elaboracion>
+        <paso p="1">Hierve el agua con la mantequilla. Vierte en un tazón sobre la harina, la mitad del té verde y sal y mezcla hasta formar una masa homogénea. Cubre con plástico y deja enfriar durante 30 minutos.</paso>
+        <paso p="2">Coloca la mezcla en una manga pastelera con punta de estrella y forma los churros sobre el aceite caliente.</paso>
+        <paso p="3">Fríe moviendo constantemente hasta que doren, retira a papel absorbente y pasa por la mezcla de azúcar con matcha.</paso>
+        <paso p="4">Decora con el chocolate blanco y deja enfriar.</paso>
+      </elaboracion>
+    </receta>
+
+    <receta>
+      <nombre>Churros rellenos de cajeta</nombre>
+      <valoracion valor="9" />
+      <descripcion></descripcion>
+      <lista_ingredientes>
+        <ingrediente>250g de harina</ingrediente>
+        <ingrediente>200ml de agua</ingrediente>
+        <ingrediente>50g mantequilla</ingrediente>
+        <ingrediente>1 pizca de sal</ingrediente>
+        <ingrediente>1/3 taza de azúcar</ingrediente>
+        <ingrediente>1/2 cucharada de canela</ingrediente>
+        <ingrediente>Aceite para freír</ingrediente>
+        <ingrediente>1 taza de nuez moscada</ingrediente>
+        <ingrediente>1/2 taza de cajeta caliente</ingrediente>
+      </lista_ingredientes>
+      <elaboracion>
+        <paso p="1">Calienta el agua con la mantequilla; cuando comience a hervir vierte sobre la harina en un tazón, agrega el azúcar y la sal, y mezcla hasta formar una masa; cubre con plástico y refrigera.</paso>
+        <paso p="2">Coloca la mezcla en una manga con punta estrella y forma los churros sobre el aceite caliente; fríe moviendo de manera constante hasta que doren. Retira a papel absorbente.</paso>
+        <paso p="3">Mezcla el azúcar con la canela y pasa los churros por la mezcla. Termina con la cajeta y nuez.</paso>
+      </elaboracion>
+    </receta>
+
+    <receta>
+      <nombre>Churros de chocolate originales</nombre>
+      <valoracion valor="9" />
+      <descripcion></descripcion>
+      <lista_ingredientes>
+        <ingrediente>250g de harina</ingrediente>
+        <ingrediente>200ml de agua</ingrediente>
+        <ingrediente>50g de mantequilla</ingrediente>
+        <ingrediente>1 pizca de sal</ingrediente>
+        <ingrediente>2 cucharadas de cacao</ingrediente>
+        <ingrediente>1/3 taza de azúcar</ingrediente>
+        <ingrediente>Aceite para freír</ingrediente>
+        <ingrediente>1 taza de crema batida</ingrediente>
+        <ingrediente>1 taza de frutos rojos</ingrediente>
+      </lista_ingredientes>
+      <elaboracion>
+        <paso p="1">Hierve el agua con la mantequilla. En un tazón, vierte lo anterior sobre la harina, 4 cucharaditas de cocoa y sal, y mezcla hasta formar una masa homogénea. Cubre con plástico y deja enfriar 30 minutos.</paso>
+        <paso p="2">Coloca la mezcla en una manga pastelera con punta de estrella y forma los churros sobre el aceite caliente en figuras de gota. Fríe moviendo hasta que doren, retira a papel absorbente y pasa por la mezcla de azúcar con la cocoa restante. Deja enfriar. Acompaña con una taza de crema batida y los frutos rojos.</paso>
+      </elaboracion>
+    </receta>
+
+    <receta>
+      <nombre>Churros con red velvet</nombre>
+      <valoracion valor="7" />
+      <descripcion></descripcion>
+      <lista_ingredientes>
+        <ingrediente>250g de harina</ingrediente>
+        <ingrediente>200ml de agua</ingrediente>
+        <ingrediente>50g de mantequilla</ingrediente>
+        <ingrediente>1 cucharada de extracto de vainilla</ingrediente>
+        <ingrediente>1 pizca de sal</ingrediente>
+        <ingrediente>6 gotas de colorante vegetal rojo</ingrediente>
+        <ingrediente>1/3 taza de azúcar</ingrediente>
+        <ingrediente>Aceite para freír</ingrediente>
+        <ingrediente>1 taza de chocolate blando derretido</ingrediente>
+        <ingrediente>1/2 taza de pistachos trozeados</ingrediente>
+        <ingrediente>1/3 taza de hojas de menta</ingrediente>
+      </lista_ingredientes>
+      <elaboracion>
+        <paso p="1">Hierve el agua con la mantequilla. Vierte sobre la harina y la sal en un tazón. Añade el colorante y mezcla hasta formar una masa homogénea.</paso>
+        <paso p="2"> Cubre con plástico y deja enfriar durante 30 minutos. Coloca la mezcla en una manga pastelera con punta de estrella y forma los churros sobre el aceite caliente. Fríe moviendo constantemente hasta que doren, retira a papel absorbente, decora con el chocolate, pistaches y hojas de menta. Deja enfriar.</paso>
+      </elaboracion>
+    </receta>
+
+    <receta>
+      <nombre>Churros al horno</nombre>
+      <valoracion valor="7" />
+      <descripcion></descripcion>
+      <lista_ingredientes>
+        <ingrediente>1 taza de agua</ingrediente>
+        <ingrediente>25g de mantequilla</ingrediente>
+        <ingrediente>2 cucharadas de aceite de coco</ingrediente>
+        <ingrediente>1 pizca de sal</ingrediente>
+        <ingrediente>1 taza de harina integral</ingrediente>
+        <ingrediente>2 huevos</ingrediente>
+        <ingrediente>1 sobre de edulcorante artificial</ingrediente>
+        <ingrediente>1/2 taza de azúcar</ingrediente>
+        <ingrediente>1/2 cucharada de canela en polvo</ingrediente>
+      </lista_ingredientes>
+      <elaboracion>
+        <paso p="1">Calienta el agua con la mantequilla en una olla a fuego medio hasta que se derrita. Agrega el sobre de edulcorante, el aceite y la sal, revuelve bien.</paso>
+        <paso p="2">Añade la harina y mezcla hasta que obtengas una masa chiclosa. Apaga y enfría por 10 minutos.</paso>
+        <paso p="3">Agrega los huevos uno a uno y bate perfectamente hasta que se unan por completo.</paso>
+        <paso p="4">Vierte la masa en una manga pastelera y forma los churros. Acomódalos bien en una charola para hornear, previamente cubierta con papel encerado.</paso>
+        <paso p="5">Hornea a 160°C por 25 minutos.</paso>
+        <paso p="6">Combina el azúcar con la canela y rueda los churros en la mezcla.</paso>
+      </elaboracion>
+    </receta>
+
+    <receta>
+      <nombre>Churros con crema y chocolate</nombre>
+      <valoracion valor="8" />
+      <descripcion></descripcion>
+      <lista_ingredientes>
+        <ingrediente>2 tazas de harina</ingrediente>
+        <ingrediente>1/2 taza de mantequilla</ingrediente>
+        <ingrediente>2 tazas de agua</ingrediente>
+        <ingrediente>1 cucharada de azúcar</ingrediente>
+        <ingrediente>1 cucharilla de sal</ingrediente>
+        <ingrediente>3 huevos</ingrediente>
+        <ingrediente>1 barra de queso crema</ingrediente>
+        <ingrediente>1 taza de crema para batir</ingrediente>
+        <ingrediente>4 cucharadas de azúcar glas</ingrediente>
+        <ingrediente>1/2 taza de chocolate derretido</ingrediente>
+        <ingrediente>4 cucharadas de chispas de azúcar</ingrediente>
+        <ingrediente>Aceite para freír</ingrediente>
+        <ingrediente></ingrediente>
+      </lista_ingredientes>
+      <elaboracion>
+        <paso p="1">Hierve el agua con la mantequilla, sal y azúcar. Agrega el harina y cuece durante un minuto sin dejar de mover.</paso>
+        <paso p="2">Transfiere la masa a la batidora, agrega los huevos uno por uno hasta integrar por completo. Coloca en una manga con punta estriada.</paso>
+        <paso p="3">Forma el churro en forma de circulo sobre una pala de metal, sumerge en el aceite caliente y dale forma con ayuda de otra pala. Cuando dore retira a papel absorbente.</paso>
+        <paso p="4">Bate el queso crema con la crema para batir y azúcar glas. Cuando haya montado coloca en una manga y sirve dentro de los churros. Decora con el chocolate y chispas.</paso>
+      </elaboracion>
+    </receta>
+  </churros>
+  
+  <!-- ========== RECETAS DE CROISSANTS ========== -->
+  <croissant>
+    <receta>
+      <nombre>Croissants francés de mantequilla</nombre>
+      <valoracion valor="10" />
+      <descripcion></descripcion>
+      <lista_ingredientes>
+        <ingrediente>500g de harina fina de repostería</ingrediente>
+        <ingrediente>75g de azúcar granulado</ingrediente>
+        <ingrediente>6g de sal</ingrediente>
+        <ingrediente>100g de mantequilla (82% grasa)</ingrediente>
+        <ingrediente>100g de levadura fresca (o 10 de seca)</ingrediente>
+        <ingrediente>95ml de leche entera</ingrediente>
+        <ingrediente>135ml de agua</ingrediente>
+        <ingrediente>250 g de mantequilla fria, con 82 % Materia grasa (para la placa de mantequilla)</ingrediente>
+        <ingrediente>1 huevo, 1 yema de huevo y 30ml de leche (para recubrir los croissants)</ingrediente>
+      </lista_ingredientes>
+      <elaboracion>
+        <paso p="1">Colocar la harina en un bol grande, o en el recipiente de la amasadora-mezcladora, si tenemos. Añadimos la sal, azúcar, leche, mantequilla blanda, y levadura, por éste orden. Es muy importante, no poner la levadura en contacto con la sal. Colocamos el accesorio de la pala, y a velocidad media-baja, vamos mezclando y añadiendo el agua progresivamente. Seguimos mezclando, hasta que los ingredientes se junten entre si, y la masa se separe del recipiente.</paso>
+        <paso p="2">Volcamos la masa sobre la mesa de trabajo o encimera. Ahora vamos a amasar con las manos, durante 10-12 minutos, hasta obtener una masa lisa, homogénea, y muy elástica. Si al estirarla con las manos, la masa no se rompe, es que ya esta perfecta. Dejamos descansar la masa unos 5-10 minutos, para que se relaje. Entonces, con las manos, o con la ayuda de un rodillo, vamos estirando la masa hasta formar un rectángulo, de 7-8 mm de grosor. La envolvemos con plástico de conservación, y la reservarnos en el frigorífico unas 8 horas, o toda la noche, (el mínimo son 4 horas). Si queréis, éste paso lo podéis realizar la noche anterior.</paso>
+        <paso p="3">Preparar la placa de mantequilla. Sacamos del frigorífico los 250 g de mantequilla, y la colocamos entres dos papeles de horno, o entre dos plásticos. Con la ayuda de un rodillo, vamos a ir aplanando, y estirando la mantequilla, con pequeños golpecitos como se muestra en el video. El objetivo es formar un rectángulo de mantequilla, que sea aproximadamente la mitad del tamaño de la masa. Con los dos papeles, tapamos perfectamente la placa de mantequilla, y la guardamos en el frigorífico, 20 minutos.</paso>
+        <paso p="4">Después de las 4-8 horas de reposo, sacamos la masa de la nevera. En la mesa de trabajo enharinada, colocamos la masa, la estiramos un poco más en forma de rectángulo de unos 6-7 mm de grosor. Colocamos la placa de mantequilla en la mitad inferior del rectángulo de masa. Cubrimos la mantequilla, con la otra mitad de masa, como si fuera un libro, de manera que la mantequilla quede bien tapada.</paso>
+        <paso p="5">Como formar los pliegues. Espolvoreamos un poco de harina en la mesa de trabajo, y en el rodillo. Giramos la masa ¼ de vuelta, de manera que la doblez nos quede a la derecha. Estiramos la masa primero longitudinalmente, y después le damos un poco de anchura. Estiramos la masa, siempre partiendo desde el centro hacia el extremo, y desde el centro al lado contrario, hasta volver a tener la masa a unos 7 mm. de grosor. Teniendo cuidado de no trabajar la masa demasiado para no introducir la mantequilla.</paso>
+        <paso p="6">Giramos de nuevo la masa, para colocar la doblez a nuestra derecha. Doblar la parte inferior de la masa hasta 2/3. Doblar entonces la parte superior para que toque la parte previamente doblada. Doblar el conjunto obtenido en 2, como si fuera una billetera, para así obtener, 4 capas de masa. Nos aseguramos de eliminar el exceso de harina entre cada doblez. Envolver la masa con plástico de conservación, y reservar en el frigorífico durante 30-40 minutos.</paso>
+        <paso p="7">Sobre la mesa de trabajo enharinada, colocar la masa con la doblez a nuestra derecha. Estirar de nuevo la masa longitudinalmente, para darle forma rectangular de 6 mm de grosor. Darle un poco de anchura, y doble un tercio de la masa sobre sí mismo empezando por la parte inferior, y cubra con la parte superior para obtener 3 capas de masa. Envolver la masa nuevamente y reservar en el frigorífico durante 30-40 minutos.</paso>
+        <paso p="8">Espolvoreamos de nuevo la encimera, con una pizca de harina. Estirar la masa para obtener un rectángulo de 28 X 64 cm y un espesor de 5-6 mm Con un cuchillo afilado grande, o un corta pastas rodante, cortar 1 cm de masa de cada lado del rectángulo, para revelar las capas. El rectángulo final de masa debe ser ahora, de unos 25 X 64 cm.</paso>
+        <paso p="9">Con un cuchillo grande, o un corta pastas, cortar unos triángulos de 8 cm de base por 25 cm de largo. Debemos obtener unos 12 triángulos. Colocar los triángulos de masa sobre una bandeja, y reservar en el frigorífico durante 15 minutos.</paso>
+        <paso p="10">Con un cuchillo, hacer una incisión de 5 mm en el medio de la base de cada triángulo. Estirar ligeramente la base de cada uno, y envolver suavemente el triángulo sobre si mismo. La punta final debemos colocarla siempre debajo, cerrando la media luna.</paso>
+        <paso p="11">Vamos a colocar los croissants en dos bandejas de horno, 6 en cada bandeja, con una separación considerable entre ellos, ya que van a crecer bastante con el levado. Pintamos los croissants suavemente, con la mezcla de huevo, yema y leche. Dejamos los croissants en un lugar templado 2 h y 30 minutos, hasta que casi, tripliquen su tamaño. La temperatura ideal para el levado, son unos 22-24º C.</paso>
+        <paso p="12">Unos 20 minutos antes del final del levado, precalentamos nuestro horno a 200º C. Cuando los croissants hayan crecido lo suficiente, los pintamos nuevamente con el glaseado de huevo, muy suavemente.</paso>
+        <paso p="13">Horneamos los 6-7 primeros minutos a 200º C. Bajamos la temperatura a unos 180º C y horneamos 12 minutos más. Tened en cuenta que, tanto el tiempo como la temperatura de horneado, es orientativa, ya que cada horno es un mundo. Debéis ajustar vuestro horno a la temperatura ideal. Estar atentos en todo momento a la cocción, y retirar los croissants, una vez esté bien dorados, y el color sea homogéneo, es decir, bien dorados por todos los lados.</paso>
+      </elaboracion>
+    </receta>
+
+    <receta>
+      <nombre>Croissants de mantequilla</nombre>
+      <valoracion valor="8" />
+      <descripcion></descripcion>
+      <lista_ingredientes>
+        <ingrediente>50ml de leche</ingrediente>
+        <ingrediente>25gr de levadura prensada</ingrediente>
+        <ingrediente>250gr de harina de trigo</ingrediente>
+        <ingrediente>250gr de harina de fuerza</ingrediente>
+        <ingrediente>60gr de azúcar</ingrediente>
+        <ingrediente>200ml de agua</ingrediente>
+        <ingrediente>10gr de sal</ingrediente>
+        <ingrediente>250gr de mantequilla sin sal</ingrediente>
+        <ingrediente>1 huevo</ingrediente>
+      </lista_ingredientes>
+      <elaboracion>
+        <paso p="1">En un bol colocar la leche tibia y la levadura desgranada. Esperar unos minutos para que se disuelva.</paso>
+        <paso p="2">Agregar el azúcar, la miel, la vainilla o ralladura y 100 g de mantequilla bien blanda. Mezclar.</paso>
+        <paso p="3">Incorporar poco a poco la harina tamizada y la sal.</paso>
+        <paso p="4">Formar una masa lisa y blanda. Amasar hasta que la masa quede bien suave.</paso>
+        <paso p="5">Tapar el bol con papel film o con un pazo de cocina y dejar levar la masa en un lugar tibio hasta que doble su tamaño. Puede ser en el horno un poco templado.  Este levado es fundamental para que los croissants de mantequilla queden bien tiernos.</paso>
+        <paso p="6">Llevar la masa a la nevera durante 1 hora en el bol siempre tapado con film o paño.</paso>
+        <paso p="7">Retirar del frío y colocar sobre la mesa enharinada, preparándola para estirar.</paso>
+        <paso p="8">Estirar con rodillo hasta formar un cuadrado de 1 cm de alto.</paso>
+        <paso p="9">Fundir los 50 g de mantequilla restantes. Pincelar la masa con mantequilla, espolvorear con harina y doblar en tres. Estirar otra vez y repetir el proceso con la manteca, la harina y el doblado hasta que se use toda la manteca.</paso>
+        <paso p="10">Reservar en la nevera durante 30 minutos.</paso>
+        <paso p="11">Estirar la masa de 1cm de espesor y cortar tiras.</paso>
+        <paso p="12">Dividir las tiras en triángulos y enrollar cada triángulo desde la base hasta el vértice.</paso>
+        <paso p="13">Colocar los croissants en placa engrasada, curvándolos para darles forma.</paso>
+        <paso p="14">Pintar con yema de huevo y llevar a horno precalentado a 180º durante15 minutos. Para dar un toque más dulce, al retirar del horno se pincelan con almíbar.</paso>
+      </elaboracion>
+    </receta>
+
+    <receta>
+      <nombre>Croissants veganos</nombre>
+      <valoracion valor="6" />
+      <descripcion></descripcion>
+      <lista_ingredientes>
+        <ingrediente>500g de harina de trigo</ingrediente>
+        <ingrediente>50ml de leche de soja templada</ingrediente>
+        <ingrediente>25g de levadura fresca</ingrediente>
+        <ingrediente>200ml de agua</ingrediente>
+        <ingrediente>80gr de azúcar</ingrediente>
+        <ingrediente>1 pizca de sal</ingrediente>
+        <ingrediente>250g de margarina vegetal</ingrediente>
+        <ingrediente>1 tableta de chocolate negro (opcional)</ingrediente>
+      </lista_ingredientes>
+      <elaboracion>
+        <paso p="1">Lo primero que hacemos es calentar unos 10 segundos en el microondas la leche,ya que la queremos templada. Desmenuzamos la levadura y la añadimos a la leche templada. Dejamos que se active unos 5 minutos.</paso>
+        <paso p="2">Tamizamos la harina y la ponemos en un bol amplio hacemos un hueco en el centro y ponemos la leche con la levadura, el azúcar, el agua y una pizca de sal (la sal la ponemos por los bordes de la harina para evitar así que destruya la levadura). Con una cuchara mezclamos bien los ingredientes hasta que ya no podamos seguir con la cuchara, pasamos nuestra masa encima de la mesa y amasamos hasta formar una masa homogénea, eso será unos 10-15 minutos. Hacemos una bola y la tapamos 15 minutos.</paso>
+        <paso p="3">Ponemos un poco de harina en la encimera para evitar que se nos pegue, estiramos la masa con un rodillo, siempre vigilando que no se nos pegue. Le dejamos un grosor de 1,5 cm más o menos, la tapamos con papel film o con papel de horno y la metemos en la nevera durante 1 hora.</paso>
+        <paso p="4">Mientras tenemos la masa metida en la nevera, damos la forma a la margarina. Sacamos la margarina de la nevera, debe de estar bien fría, la colocamos encima de un papel de horno y doblamos el papel a la mitad para dejar la margarina dentro. Con la ayuda del rodillo le damos unos golpes para dejar un grosor de 0,5 cm, el tamaño de nuestro rectángulo de margarina debe de ser la mitad de tamaño del rectángulo de masa que hemos hecho antes(Esto se aprecia muy bien en el vídeo). Metemos la margarina en la nevera o incluso en el congelador para que este bien dura.</paso>
+        <paso p="5">Pasada la hora sacamos la masa de la nevera, ponemos un poco de harina en la encimera, colocamos la margarina en uno de los lados y con el otro lado lo cerramos.</paso>
+        <paso p="6">Vamos estirando con cuidado empezando desde el centro hacia uno de los lados y luego el lado contrario. Estiramos la masa hasta dejarla con una anchura de 0.5 cm. Ahora vamos a darle la primera vuelta simple que consiste en plegar la masa sobre sí misma, nos imaginamos que la masa tiene tres pliegues y la doblamos con si fuera un tríptico. Tapamos con papel de horno y metemos en la nevera durante 30 minutos.</paso>
+        <paso p="7">Pasados los 30 minutos ponemos un poco de harina en la encimera y volvemos a estirar la masa usando la misma técnica que antes. Esta vez la vuelta será doble, nos imaginamos la masa está divida en 4 rectángulos iguales y plegamos los extremos hacia el centro y eso dos pliegues los ponemos hacía unos de los lados. En la foto se ve mucho mejor. Tapamos y metemos en la nevera 30 minutos.</paso>
+        <paso p="8">Ponemos harina en la encimera y estiramos nuestra masa dejando 0.5 cm de grosor. Cortamos nuestros croissants con un corta pizza o con un cuchillo, los croissants son triángulos, la base tendrá unos 8 cm de largo (la base del triángulo). Para formar los croissants cogemos uno de los triángulos que tenemos, le hacemos un pequeño corte en la base, no más de 1 cm, en este momento le ponemos el chocolate negro para rellenarlos y los enrollamos sobre sí mismos, dejando el pico del triángulo en la base para evitar que se nos abra en el horno. Hacemos lo mismo con todos, los colocamos encima de una bandeja de horno y los tapamos con papel film, pintamos con leche vegetal y fermentamos durante 2 horas, el tiempo de fermentación va a depender de la temperatura que haga. Nosotros nos lo llevamos a la parte de la casa donde más calor hacía y tardó en fermentar 1 hora, debe de doblar el volumen.</paso>
+        <paso p="9">Precalentamos el horno a 200ºc.</paso>
+        <paso p="10">Volvemos a pintar los croissants con mucho cuidado, metemos en el horno 6 minutos a 200ºc y luego bajamos el horno a 180º durante 14 minutos.</paso>
+        <paso>Pasado este tiempo sacamos los croissants del horno y dejamos enfriar sobre una rejilla, ya están listos nuestros croissants veganos super ricos para sorprender a todos.</paso>
+      </elaboracion>
+    </receta>
+  </croissant>
+</reposteria>
